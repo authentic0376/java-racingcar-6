@@ -19,7 +19,7 @@ public class UserInputProcessor {
 
     public void processOperationCntStr(String operationCntStr) {
         try {
-            operationCnt = Integer.parseInt(Console.readLine());
+            operationCnt = Integer.parseInt(operationCntStr);
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException();
         }
